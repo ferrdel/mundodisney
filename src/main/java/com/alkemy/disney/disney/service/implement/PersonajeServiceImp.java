@@ -25,7 +25,7 @@ public class PersonajeServiceImp implements PersonajeService {
         return result;
     }
 
-    public PersonajeDTO update(PersonajeDTO dto,Long id) {
+  /*  public PersonajeDTO update(PersonajeDTO dto,Long id) {
         Optional<PersonajeEntity> entity= personajeRepository.findById(id);
         if (entity.isPresent()){
             this.personajeMapper.personajeEntityRefreshValues(entity.get());
@@ -36,7 +36,7 @@ public class PersonajeServiceImp implements PersonajeService {
             return null;
         }
 
-    }
+    } */
 
     public void delete(Long id){
         personajeRepository.deleteById(id);

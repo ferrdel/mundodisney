@@ -19,12 +19,13 @@ public class PersonajeController {
         PersonajeDTO personajeGdo= personajeService.save(personaje);
         return ResponseEntity.status(HttpStatus.CREATED).body(personajeGdo);
     }
-
+    
+    /*
     @PutMapping("/{id}")
     public ResponseEntity<PersonajeDTO> update(@RequestBody PersonajeDTO personaje, @PathVariable Long id){
         PersonajeDTO personajeDTO= personajeService.update(personaje, id);
         return ResponseEntity.ok().body(personajeDTO);
-    }
+    } */
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id){

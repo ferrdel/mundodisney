@@ -26,7 +26,7 @@ public class PersonajeMapper {
         dto.setHistoria(entity.getHistoria());
         return dto;
     }
-
+/*
     public PersonajeDTO personajeEntityRefreshValues(PersonajeEntity entity){
         PersonajeDTO dtoS = new PersonajeDTO();
         dtoS.setNombre(entity.getNombre());
@@ -35,5 +35,5 @@ public class PersonajeMapper {
         dtoS.setPeso(entity.getPeso());
         dtoS.setHistoria(entity.getHistoria());
         return dtoS;
-    }
+    } */
 }
